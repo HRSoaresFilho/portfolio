@@ -1,9 +1,16 @@
-import React from 'react'
 import Nav from './common/nav'
 
+import Head from 'next/head'
 
-const Index = () => (
+
+export default function Index(){
+  return (
+    <>
+    <Head>
+      <title>Home - devHumberto</title>
+      
+    </Head>
     <Nav />
+    </>
   )
-  
-  export default Index
+}
