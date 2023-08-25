@@ -153,7 +153,10 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col my-2">
                     <div class="card shadow-sm">
-                        <img src="dist/img/projeto-portifolio.png" alt="">
+                        <div class="card-header text-center">
+                            Sistema de Matrículas Online
+                        </div>
+                        <img src="dist/img/projeto-sismatr-escola-da-ilha.png" alt="">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="tecnologies">
@@ -164,8 +167,7 @@
                                     </small>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-up-right-from-square"></i></button>
+                                    <p class="h6 mt-1 text-secondary">Projeto privado</p>
                                 </div>
                             </div>
                         </div>
@@ -173,26 +175,9 @@
                 </div>
                 <div class="col my-2">
                     <div class="card shadow-sm">
-                        <img src="dist/img/projeto-granah.png" alt="">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="tecnologies">
-                                    <small>
-                                        <i class="fa-brands fa-html5 fa-xl mx-1"></i>
-                                        <i class="fa-brands fa-bootstrap fa-xl mx-1"></i>
-                                        <i class="fa-brands fa-php fa-xl mx-1"></i>
-                                    </small>
-                                </div>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-up-right-from-square"></i></button>
-                                </div>
-                            </div>
+                        <div class="card-header text-center">
+                            Simulador de Benefício - SCPREV
                         </div>
-                    </div>
-                </div>
-                <div class="col my-2">
-                    <div class="card shadow-sm">
                         <img src="dist/img/projeto-simulador-1-scprev.png" alt="">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
@@ -204,16 +189,19 @@
                                     </small>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-up-right-from-square"></i></button>
+                                    <a href="https://scprev.com.br/simuladordebeneficio/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col">
+                <div class="col my-2">
                     <div class="card shadow-sm">
+                        <div class="card-header text-center">
+                            Simulador BEP - SCPREV
+                        </div>
                         <img src="dist/img/projeto-simulador-2-scprev.png" alt="">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
@@ -225,8 +213,58 @@
                                     </small>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-github"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-up-right-from-square"></i></button>
+                                    <a href="https://scprev.com.br/bep/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center">
+                            granah - Controle Financeiro Pessoal
+                        </div>
+                        <img src="dist/img/projeto-granah.png" alt="">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tecnologies">
+                                    <small>
+                                        <i class="fa-brands fa-html5 fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-bootstrap fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-php fa-xl mx-1"></i>
+                                    </small>
+                                </div>
+                                <div class="btn-group">
+                                    <p class="h6 mt-1 text-secondary">Em desenvolvimento</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center">
+                            Portifólio
+                        </div>
+                        <img src="dist/img/projeto-portifolio.png" alt="">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tecnologies">
+                                    <small>
+                                        <i class="fa-brands fa-html5 fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-bootstrap fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-php fa-xl mx-1"></i>
+                                    </small>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="https://github.com/HRSoaresFilho/portfolio" class="btn btn-sm btn-outline-secondary" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
