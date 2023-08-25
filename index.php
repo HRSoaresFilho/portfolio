@@ -280,17 +280,18 @@
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col mb-5 text-center"><img id="img-contato" src="dist/img/astronauta-contato.jpg" width="300" alt=""></div>
                 <div class="col">
-                    <form action="">
+                    <form>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com.br">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4"
+                            placeholder="Escreva sua mensagem..."></textarea>
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-warning btn-lg px-4 me-md-2 cta" type="submit">
+                            <button class="btn btn-warning btn-lg px-4 me-md-2 cta" id="submit-form" type="submit">
                                 Enviar</button>
                         </div>
                     </form>
