@@ -9,8 +9,7 @@ try {
 $mail = new PHPMailer(true); //New instance, with exceptions enabled
  
 /* CORPO DO E-MAIL */
-$body .= "<h2>Enviando e-mails com AJAX e PHP via SMTP</h2>";
-$body .= "Nome: $nome <br>";
+$body .= "<h2>Formulário do Site</h2>";
 $body .= "E-mail: $email <br>";
 $body .= "Mensagem:<br>";
 $body .= $msg;
@@ -36,7 +35,7 @@ $mail->FromName   = $nome; //nome fornecido pelo cliente
  
 $to = "meuemail@meuservidor.com"; //Enviar para
 $mail->AddAddress($to); 
-$mail->Subject  = "Assunto do E-mail"; //Assunto
+$mail->Subject  = "Formulário do Site"; //Assunto
 $mail->WordWrap   = 80; // set word wrap
  
 $mail->MsgHTML($body);
