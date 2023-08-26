@@ -32,36 +32,83 @@ $(document).on('scroll', function () {
     });
 });
 
-$(document).ready( function(){
-    $('#submit-form').click( function(){
-        var email = $('#email').val();
-        var msg   = $('#mensagem').val();
- 
-        if(email.length <= 5){
-            alert('Informe seu email');
-            return false;
-        }
-        if(msg.length <= 5){
-            alert('Escreva uma mensagem');
+$(document).ready(function () {
+    var $submitForm = $('#submit-form');
+    var $nome = $('#nome');
+    var $email = $('#email');
+    var $msg = $('#mensagem');
+    var $response = $('#response');
+    var $loading = $('.loading');
+    var $textSend = $('#text-send');
+    var $formContato = $('#form-contato');
+
+    $submitForm.click(function () {
+        var nome = $nome.val();
+        var email = $email.val();
+        var msg = $msg.val();
+
+        function showMessage(message) {
+
+            $response.html(message);
+            $response.removeClass('text-success').addClass('p-1 text-danger');
+
+            setTimeout(function () {
+                $response.removeClass('p-1');
+                $response.html('');
+            }, 3000);
+
             return false;
         }
 
-        var urlData = "&email=" + email + "&msg=" + msg ;
- 
+        if (nome.length <= 5) {
+            return showMessage('Informe seu nome');
+        }
+        if (email.length <= 5) {
+            return showMessage('Informe seu email');
+        }
+        if (msg.length <= 5) {
+            return showMessage('Escreva uma mensagem');
+        }
+
+        var urlData = "&nome=" + nome + "&email=" + email + "&msg=" + msg;
+
+        function resetForm() {
+            $formContato[0].reset();
+            $textSend.text("Enviar").fadeIn('fast');
+        }
+
         $.ajax({
-             type: "POST",
-             url: "sendmail.php",
-             async: true,
-             data: urlData,
-             success: function(data) {
-                 $('#retornoHTML').html(data);
-             },
-             beforeSend: function() {
-                 $('.loading').fadeIn('fast'); 
-             },
-             complete: function(){
-                 $('.loading').fadeOut('fast');
-             }
-         });
+            type: "POST",
+            url: "dist/php/sendmail.php",
+            async: true,
+            data: urlData,
+            success: function (data) {
+                $response.html(data);
+                $response.removeClass('text-danger').addClass('p-1 text-success');
+                $loading.hide();
+                resetForm();
+                $textSend.fadeIn('fast', function () {
+                    setTimeout(function () {
+                        $response.removeClass('p-1');
+                        $response.html('');
+                    }, 4000);
+                });
+            },
+            error: function (data) {
+                $response.html(data.responseText);
+                $response.removeClass('text-success').addClass('p-1 text-danger');
+                $loading.hide();
+                $textSend.fadeIn('fast', function () {
+                    setTimeout(function () {
+                        $response.removeClass('p-1');
+                        $response.html('');
+                    }, 4000);
+                });
+            },
+            beforeSend: function () {
+                $textSend.hide();
+                $loading.fadeIn('fast');
+            }
+        });
     });
 });

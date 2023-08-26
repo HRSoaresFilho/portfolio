@@ -280,19 +280,26 @@
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col mb-5 text-center"><img id="img-contato" src="dist/img/astronauta-contato.jpg" width="300" alt=""></div>
                 <div class="col">
-                    <form>
+                    <form id="form-contato" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com.br">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4">
                             <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="mensagem" rows="4"
-                            placeholder="Escreva sua mensagem..."></textarea>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-warning btn-lg px-4 me-md-2 cta" id="submit-form" type="submit">
-                                Enviar</button>
+                            <button type="button" class="cta btn btn-warning btn-lg px-4 me-md-2" id="submit-form">
+                                <span id="text-send">Enviar</span>
+                                <img src="dist/img/loading.gif" class="loading">
+                            </button>
+                            <br />
+                            <div class="mt-3 bg-light text-center rounded " id="response"></div>
                         </div>
                     </form>
                 </div>

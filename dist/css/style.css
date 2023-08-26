@@ -1,3 +1,4 @@
+/* Reset and Global Styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -13,8 +14,7 @@ html, body {
     border-radius: 0 !important;
 }
 
-/* NAVBAR */
-
+/* Navbar Styles */
 .nav-link,
 .nav-link:focus {
     color: #fff !important;
@@ -25,6 +25,7 @@ html, body {
     color: #ffc107 !important;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
     .fixed-top-desktop {
         position: fixed;
@@ -39,6 +40,9 @@ html, body {
         animation: fade 0.5s linear;
     }
 
+    #img-contato {
+        width: 400px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -46,18 +50,20 @@ html, body {
         --bs-bg-opacity: 1;
         background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
     }
+
+    #img-contato {
+        width: 300px;
+    }
 }
 
-/* BACKGROUND SKY */
-
+/* Background Styles */
 .sky {
     position: fixed;
     z-index: 1;
     top: 0;
 }
 
-/* HOME/HERO */
-
+/* Home/Hero Styles */
 #home {
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(38, 98, 221, 1) 100%);
@@ -81,7 +87,7 @@ html, body {
     width: 200px;
 }
 
-/* SECTIONS */
+/* Section Styles */
 #about,
 #projects {
     padding-top: 80px;
@@ -90,8 +96,7 @@ html, body {
     z-index: 20;
 }
 
-/* CONTACT */
-
+/* Contact Styles */
 #contact {
     background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(38, 98, 221, 1) 100%);
     color: #fff;
@@ -106,16 +111,13 @@ html, body {
     z-index: 10;
 }
 
-@media (min-width: 768px) {
-    #img-contato {
-        width: 400px;
-    }
+img.loading {
+    max-width: 75px;
+    display: none;
 }
 
-@media (max-width: 767px) {
-    #img-contato {
-        width: 300px;
-    }
+#response {
+    font-size: medium;
 }
 
 @keyframes fade {
