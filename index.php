@@ -113,7 +113,7 @@
                             <img src="dist/img/astronauta-card-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Desenvolvedor Espacial</h5>
-                                <p class="card-text">Explorando Fronteiras Digitais e Cósmicas: Um desenvolvedor em busca 
+                                <p class="card-text">Explorando Fronteiras Digitais e Cósmicas: Um desenvolvedor em busca
                                     de inovação, um código de cada vez, enquanto minha mente vagueia pelas estrelas.</p>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                             <img src="dist/img/astronauta-card-2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dev Astral</h5>
-                                <p class="card-text">Harmonizando o Espaço Interior: Um desenvolvedor encontrando serenidade 
+                                <p class="card-text">Harmonizando o Espaço Interior: Um desenvolvedor encontrando serenidade
                                     entre linhas de código, acompanhado pelo cosmos e uma caneca de inspiração.</p>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                             <img src="dist/img/astronauta-card-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Amor e União Cósmica</h5>
-                                <p class="card-text">Navegando pelo Código com Amor e Paz: Como desenvolvedor, trago a essência 
+                                <p class="card-text">Navegando pelo Código com Amor e Paz: Como desenvolvedor, trago a essência
                                     do universo para cada projeto, promovendo harmonia e unidade através da tecnologia.</p>
                             </div>
                         </div>
@@ -303,6 +303,14 @@
         </div>
     </section>
 
+    <footer>
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            &copy; 2023 Copyright:
+            <a href="https://devhumbertofilho.com.br/">devhumbertofilho.com.br</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
     <!-- Bootstrap -->
     <script src="dist/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->

@@ -120,6 +120,17 @@ img.loading {
     font-size: medium;
 }
 
+footer{
+    position: relative;
+    background-color: rgba(2, 0, 36, 1) !important;
+    z-index: 20;
+    font-size: medium;
+}
+
+footer a{
+    color: #fff !important;
+}
+
 @keyframes fade {
     0% {
         background-color: transparent;

@@ -8,7 +8,7 @@ $(function () {
     });
 });
 
-$(document).on('click', 'a[href^="#"]', function (event) {
+$(document).on('click', '.navbar a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -26,8 +26,8 @@ $(document).on('scroll', function () {
 
         if (sectionBottom - tolerance > windowTop && sectionTop + tolerance < windowBottom) {
             var id = $(this).attr('id');
-            $('a[href="#' + id + '"]').addClass('active');
-            $('a[href^="#"]').not('a[href="#' + id + '"]').removeClass('active');
+            $('.navbar a[href="#' + id + '"]').addClass('active');
+            $('.navbar a[href^="#"]').not('.navbar a[href="#' + id + '"]').removeClass('active');
         }
     });
 });
