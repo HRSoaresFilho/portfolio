@@ -1,49 +1,72 @@
 <?php
 
-require_once('PHPMailer_5.2.1/class.phpmailer.php');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$email = $_POST['email'];
-$msg = $_POST['msg'];
- 
+require_once(__DIR__ . "/PHPMailer-6.8.0/src/PHPMailer.php");
+require_once(__DIR__ . "/PHPMailer-6.8.0/src/SMTP.php");
+require_once(__DIR__ . "/PHPMailer-6.8.0/src/Exception.php");
+
+// Configurações de e-mail
+$host = "smtp.host.com.br";
+$port = 465;
+$username = "email@exemplo.com.br";
+$password = "senha";
+$senderEmail = "email@exemplo.com.br";
+$recipientEmail = "email@exemplo.com.br";
+$subject = "Formulário do Site";
+
+// Campos do formulário
+$nome = $_POST["nome"] ?? "";
+$email = $_POST["email"] ?? "";
+$msg = $_POST["msg"] ?? "";
+
 try {
-$mail = new PHPMailer(true); //New instance, with exceptions enabled
- 
-/* CORPO DO E-MAIL */
-$body .= "<h2>Formulário do Site</h2>";
-$body .= "E-mail: $email <br>";
-$body .= "Mensagem:<br>";
-$body .= $msg;
-$body .= "<br>";
-$body .= "----------------------------";
-$body .= "<br>";
-$body .= "Enviado em <strong>".date("h:m:i d/m/Y")." por ".$_SERVER['REMOTE_ADDR']."</strong>"; //mostra a data e o IP
-$body .= "<br>";
-$body .= "----------------------------";
- 
-$mail->IsSMTP(); //tell the class to use SMTP
-$mail->SMTPAuth = true; // enable SMTP authentication
-$mail->Port = 587; //SMTP porta (as mais utilizadas são '25' e '587'
-$mail->Host = "smtp.meudominio.com"; // SMTP servidor
-$mail->Username = "contato@meudominio.com";  // SMTP  usuário
-$mail->Password = "senha123abc";  // SMTP senha
- 
-$mail->IsSendmail();  
- 
-$mail->AddReplyTo($email, $nome); //Responder para..
-$mail->From = $email; //e-mail fornecido pelo cliente
-$mail->FromName   = $nome; //nome fornecido pelo cliente
- 
-$to = "meuemail@meuservidor.com"; //Enviar para
-$mail->AddAddress($to); 
-$mail->Subject  = "Formulário do Site"; //Assunto
-$mail->WordWrap   = 80; // set word wrap
- 
-$mail->MsgHTML($body);
- 
-$mail->IsHTML(true); // send as HTML
- 
-$mail->Send();
-echo 'Mensagem enviada com sucesso.'; //retorno devolvido para o ajax caso sucesso
-} catch (phpmailerException $e) {
-echo $e->errorMessage(); //retorno devolvido para o ajax caso erro
+    // Inicializar PHPMailer
+    $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
+
+    // Construir o corpo do e-mail
+    $messageParts = [
+        "<h2>Formulário do Site</h2>",
+        "Nome: $nome <br>",
+        "E-mail: $email <br>",
+        "Mensagem:<br>",
+        nl2br($msg),
+        "<br>",
+        "----------------------------",
+        "<br>",
+        "Enviado em <strong>" . date("d/m/Y") . " as " . date("h:m:i") . ", por " . $_SERVER["REMOTE_ADDR"] . "</strong>",
+        "<br>",
+        "----------------------------",
+    ];
+    $body = implode("<br>", $messageParts);
+
+    // Configurações do PHPMailer
+    $mail->IsSMTP();
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = $port;
+    $mail->Host = $host;
+    $mail->Username = $username;
+    $mail->Password = $password;
+
+    $mail->AddReplyTo($email, $nome);
+    $mail->From = $senderEmail;
+    $mail->FromName = $nome;
+
+    $mail->AddAddress($recipientEmail);
+    $mail->Subject = $subject;
+    $mail->WordWrap = 80;
+
+    $mail->MsgHTML($body);
+    $mail->IsHTML(true);
+
+    $mail->Send();
+
+    http_response_code(200);
+    echo "<strong>Mensagem enviada com sucesso!</strong>";
+} catch (Exception $e) {
+    http_response_code(500);
+    echo "Ocorreu um erro ao enviar a mensagem: <br /> <strong>" . $e->getMessage() . "</strong>";
 }
