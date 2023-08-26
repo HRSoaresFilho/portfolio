@@ -79,8 +79,7 @@
                         em Gestão de Tecnologia da Informação e pós-graduando em Análise e Desenvolvimento de Programas.
                     </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
-                        <a class="btn btn-warning btn-lg px-4 me-md-2 cta" href="https://wa.me/5548988643890/" target="_blank">
-                            Contato</a>
+                        <a class="btn btn-warning btn-lg px-4 me-md-2 cta" href="#contact">Contato</a>
                         <a class="btn btn-outline-light btn-lg px-4 cta" href="#projects">Projetos</a>
                     </div>
                 </div>
@@ -113,10 +112,9 @@
                         <div class="card">
                             <img src="dist/img/astronauta-card-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Foco na qualidade</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Desenvolvedor Espacial</h5>
+                                <p class="card-text">Explorando Fronteiras Digitais e Cósmicas: Um desenvolvedor em busca 
+                                    de inovação, um código de cada vez, enquanto minha mente vagueia pelas estrelas.</p>
                             </div>
                         </div>
                     </div>
@@ -124,10 +122,9 @@
                         <div class="card">
                             <img src="dist/img/astronauta-card-2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Estou aqui para ajudar</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Dev Astral</h5>
+                                <p class="card-text">Harmonizando o Espaço Interior: Um desenvolvedor encontrando serenidade 
+                                    entre linhas de código, acompanhado pelo cosmos e uma caneca de inspiração.</p>
                             </div>
                         </div>
                     </div>
@@ -135,10 +132,9 @@
                         <div class="card">
                             <img src="dist/img/astronauta-card-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Cliente satisfeito = Dev Satisfeito</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
+                                <h5 class="card-title">Amor e União Cósmica</h5>
+                                <p class="card-text">Navegando pelo Código com Amor e Paz: Como desenvolvedor, trago a essência 
+                                    do universo para cada projeto, promovendo harmonia e unidade através da tecnologia.</p>
                             </div>
                         </div>
                     </div>
