@@ -150,6 +150,29 @@
                 <div class="col my-2">
                     <div class="card shadow-sm">
                         <div class="card-header text-center">
+                            Site Alfaq - Produtos Químicos
+                        </div>
+                        <img src="dist/img/site-alfaq-wordpress.png" alt="">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tecnologies">
+                                    <small>
+                                        <i class="fa-brands fa-wordpress fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-elementor fa-xl mx-1"></i>
+                                    </small>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="https://www.alfaq.com.br/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center">
                             Sistema de Matrículas Online
                         </div>
                         <img src="dist/img/projeto-sismatr-escola-da-ilha.png" alt="">
