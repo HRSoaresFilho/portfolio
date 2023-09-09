@@ -89,10 +89,10 @@
     <section id="about">
         <div class="container mb-5">
             <h1 class="text-center mb-5 fw-bold">SOBRE MIM</h1>
-            <p>Sou um desenvolvedor Full Stack com mais de 5 anos de experiência, especializado na criação de soluções
+            <p>Sou um Desenvolvedor Full Stack com mais de 5 anos de experiência, especializado na criação de soluções
                 tecnológicas abrangentes. Minha jornada profissional abrange desde a construção de interfaces de usuário
-                até a implementação de back-ends. Tenho proficiência em tecnologias modernas como HTML5, CSS3, JavaScript,
-                Vue.js e Bootstrap, combinadas com habilidades sólidas em PHP. </p>
+                até a implementação de back-ends. Tenho proficiência em tecnologias modernas como HTML5, CSS3, JavaScript e 
+                Bootstrap, combinadas com habilidades sólidas em PHP, além de experiências com frameworks Laravel e CodeIgniter.</p>
             <p>Minha versatilidade se estende além do desenvolvimento web, englobando a criação de sistemas eficientes através
                 do Microsoft Excel. Automatizar tarefas repetitivas e desenvolver modelos complexos são aspectos do meu trabalho
                 que demonstram minha dedicação à otimização e à entrega de resultados tangíveis.</p>
