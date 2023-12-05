@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="dist/img/favicon.png">
     <title>devHumbertoFilho</title>
     <!-- Bootstrap -->
     <link href="dist/bootstrap-5.3.1/css/bootstrap.min.css" rel="stylesheet" />
@@ -76,7 +77,8 @@
                     <h1 class="display-5 lh-1 mb-3">Sou <span class="fw-bold">Humberto</span>,</h1>
                     <h2 class="fw-bold lh-1 mb-3 text-warning">desenvolvedor full stack.</h2>
                     <p class="lead">Apaixonado por tecnologia, planilhas e finanças, com uma sólida formação
-                        em Gestão de Tecnologia da Informação e pós-graduando em Análise e Desenvolvimento de Programas.
+                        em Gestão de TI, pós-graduado em Análise e Desenvolvimento de Programas e 
+                        pós-graduando em Desenvolvimento Full Stack.
                     </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
                         <a class="btn btn-warning btn-lg px-4 me-md-2 cta" href="#contact">Contato</a>
@@ -89,10 +91,10 @@
     <section id="about">
         <div class="container mb-5">
             <h1 class="text-center mb-5 fw-bold">SOBRE MIM</h1>
-            <p>Sou um Desenvolvedor Full Stack com mais de 5 anos de experiência, especializado na criação de soluções
+            <p>Sou um Desenvolvedor Full Stack com mais de 5 anos de experiência, especializado na criação e sustentação de soluções
                 tecnológicas abrangentes. Minha jornada profissional abrange desde a construção de interfaces de usuário
                 até a implementação de back-ends. Tenho proficiência em tecnologias modernas como HTML5, CSS3, JavaScript e 
-                Bootstrap, combinadas com habilidades sólidas em PHP, além de experiências com frameworks Laravel e CodeIgniter.</p>
+                Bootstrap, combinadas com habilidades sólidas em PHP, além de experiências com frameworks CodeIgniter e Laravel.</p>
             <p>Minha versatilidade se estende além do desenvolvimento web, englobando a criação de sistemas eficientes através
                 do Microsoft Excel. Automatizar tarefas repetitivas e desenvolver modelos complexos são aspectos do meu trabalho
                 que demonstram minha dedicação à otimização e à entrega de resultados tangíveis.</p>
@@ -252,7 +254,7 @@
                                     <small>
                                         <i class="fa-brands fa-html5 fa-xl mx-1"></i>
                                         <i class="fa-brands fa-bootstrap fa-xl mx-1"></i>
-                                        <i class="fa-brands fa-php fa-xl mx-1"></i>
+                                        <img class="tecnologies-codeigniter" src="dist/img/codeigniter-icon.png" alt="">
                                     </small>
                                 </div>
                                 <div class="btn-group">
@@ -308,6 +310,28 @@
                                     <a href="https://cartaoamigosaude.com.br/" class="btn btn-sm btn-outline-secondary" target="_blank">
                                         <i class="fa-solid fa-up-right-from-square"></i>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center">
+                            Sustentação - GAPSys
+                        </div>
+                        <img src="dist/img/projeto-gapsys.png" alt="">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tecnologies">
+                                    <small>
+                                        <i class="fa-brands fa-html5 fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-js fa-xl mx-1"></i>
+                                        <img class="tecnologies-codeigniter" src="dist/img/codeigniter-icon.png" alt="">
+                                    </small>
+                                </div>
+                                <div class="btn-group">
+                                    <p class="h6 mt-1 text-secondary">Projeto privado</p>
                                 </div>
                             </div>
                         </div>
