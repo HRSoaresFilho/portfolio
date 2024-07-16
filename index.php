@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="dist/img/favicon.png">
-    <title>devHumbertoFilho</title>
+    <title>devHumberto</title>
     <!-- Bootstrap -->
     <link href="dist/bootstrap-5.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="dist/bootstrap-5.3.1/css/cover.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-dark bg-dark-mobile navbar-expand-md fixed-top-desktop">
         <div class="container my-2">
             <a class="navbar-brand text-light" href="">
-                <i class="fa-solid fa-code fa-lg text-warning me-3"></i>dev<span class="fw-bold">Humberto</span>Filho
+                <i class="fa-solid fa-code fa-lg text-warning me-3"></i>dev<span class="fw-bold">Humberto</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -77,8 +77,7 @@
                     <h1 class="display-5 lh-1 mb-3">Sou <span class="fw-bold">Humberto</span>,</h1>
                     <h2 class="fw-bold lh-1 mb-3 text-warning">desenvolvedor full stack.</h2>
                     <p class="lead">Apaixonado por tecnologia, planilhas e finanças, com uma sólida formação
-                        em Gestão de TI, pós-graduado em Análise e Desenvolvimento de Programas e 
-                        pós-graduando em Desenvolvimento Full Stack.
+                        em Gestão de TI e pós-graduado em Análise e Desenvolvimento de Programas.
                     </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
                         <a class="btn btn-warning btn-lg px-4 me-md-2 cta" href="#contact">Contato</a>
@@ -91,21 +90,71 @@
     <section id="about">
         <div class="container mb-5">
             <h1 class="text-center mb-5 fw-bold">SOBRE MIM</h1>
-            <p>Sou um Desenvolvedor Full Stack com mais de 5 anos de experiência, especializado na criação e sustentação de soluções
-                tecnológicas abrangentes. Minha jornada profissional abrange desde a construção de interfaces de usuário
-                até a implementação de back-ends. Tenho proficiência em tecnologias modernas como HTML5, CSS3, JavaScript e 
-                Bootstrap, combinadas com habilidades sólidas em PHP, além de experiências com frameworks CodeIgniter e Laravel.</p>
-            <p>Minha versatilidade se estende além do desenvolvimento web, englobando a criação de sistemas eficientes através
-                do Microsoft Excel. Automatizar tarefas repetitivas e desenvolver modelos complexos são aspectos do meu trabalho
-                que demonstram minha dedicação à otimização e à entrega de resultados tangíveis.</p>
-            <p>Minha paixão por finanças pessoais enriquece minha abordagem técnica. Minha compreensão das nuances financeiras
-                me permite criar ferramentas de gerenciamento que capacitam os indivíduos a tomar decisões
-                informadas. Fundir minhas habilidades técnicas com a expertise em finanças gera soluções
-                abrangentes e práticas.</p>
-            <p>Estou comprometido em enfrentar desafios progressivos que expandam meus horizontes e contribuam para projetos
-                de impacto. Minha combinação única de habilidades técnicas diversificadas, visão financeira e competência
-                interpessoal me capacita a abordar com sucesso os desafios em constante evolução no mundo do desenvolvimento
-                de software e na esfera tecnológica.</p>
+            <div class="clearfix">
+                <img src="dist/img/humberto.jpg" alt="Foto sobre mim" class="img-fluid rounded float-start me-3 mb-3" width="500">
+                <p>Sou um Desenvolvedor Full Stack com mais de 7 anos de experiência, especializado na criação e
+                    manutenção de soluções tecnológicas abrangentes. Minha carreira abrange desde a construção de
+                    interfaces de usuário até a implementação de back-ends robustos. Tenho proficiência em tecnologias
+                    modernas como HTML5, CSS3, JavaScript e Bootstrap, além de habilidades sólidas em PHP e experiência
+                    com os frameworks CodeIgniter e Laravel.</p>
+                <p>Minha versatilidade vai além do desenvolvimento web, incluindo a criação de sistemas eficientes com o
+                    Microsoft Excel. Sou capaz de automatizar tarefas repetitivas e desenvolver modelos complexos,
+                    demonstrando minha dedicação à otimização e entrega de resultados tangíveis.</p>
+                <p>Minha paixão por finanças pessoais enriquece minha abordagem técnica, permitindo-me criar ferramentas
+                    de gerenciamento que capacitam os indivíduos a tomar decisões informadas. A fusão das minhas
+                    habilidades técnicas com a expertise em finanças resulta em soluções abrangentes e práticas.</p>
+                <p>Estou comprometido em enfrentar desafios que expandam meus horizontes e contribuam para projetos de
+                    impacto. Minha combinação única de habilidades técnicas diversificadas, visão financeira e
+                    competência interpessoal me capacita a abordar com sucesso os desafios em constante evolução no
+                    mundo do desenvolvimento de software e na esfera tecnológica.</p>
+            </div>
+        </div>
+        <!-- Seção de Habilidades -->
+        <!-- Seção de Habilidades -->
+        <div class="container mb-5">
+            <h2 class="text-center mb-5 fw-bold">HABILIDADES</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><i class="fa-brands fa-html5"></i> HTML5</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <p><i class="fa-brands fa-php"></i> PHP</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <p><i class="fa-brands fa-js"></i> JavaScript</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <p><i class="fa-solid fa-database"></i> MySQL</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p><i class="fa-brands fa-laravel"></i> Laravel</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <p><img class="tecnologies-codeigniter" src="dist/img/codeigniter-icon.png" alt="" style="height:20px; left:-2px; top:-4px;"> CodeIgniter</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                    <p><i class="fa-solid fa-file-excel"></i> Excel</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <p><i class="fa-brands fa-bootstrap"></i> Bootstrap</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container-fluid bg-dark">
             <div class="container py-5">
@@ -115,7 +164,8 @@
                             <img src="dist/img/astronauta-card-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Desenvolvedor Espacial</h5>
-                                <p class="card-text">Explorando Fronteiras Digitais e Cósmicas: Um desenvolvedor em busca
+                                <p class="card-text">Explorando Fronteiras Digitais e Cósmicas: Um desenvolvedor em
+                                    busca
                                     de inovação, um código de cada vez, enquanto minha mente vagueia pelas estrelas.</p>
                             </div>
                         </div>
@@ -125,7 +175,8 @@
                             <img src="dist/img/astronauta-card-2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dev Astral</h5>
-                                <p class="card-text">Harmonizando o Espaço Interior: Um desenvolvedor encontrando serenidade
+                                <p class="card-text">Harmonizando o Espaço Interior: Um desenvolvedor encontrando
+                                    serenidade
                                     entre linhas de código, acompanhado pelo cosmos e uma caneca de inspiração.</p>
                             </div>
                         </div>
@@ -135,8 +186,10 @@
                             <img src="dist/img/astronauta-card-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Amor e União Cósmica</h5>
-                                <p class="card-text">Navegando pelo Código com Amor e Paz: Como desenvolvedor, trago a essência
-                                    do universo para cada projeto, promovendo harmonia e unidade através da tecnologia.</p>
+                                <p class="card-text">Navegando pelo Código com Amor e Paz: Como desenvolvedor, trago a
+                                    essência
+                                    do universo para cada projeto, promovendo harmonia e unidade através da tecnologia.
+                                </p>
                             </div>
                         </div>
                     </div>
