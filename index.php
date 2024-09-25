@@ -320,7 +320,7 @@
                 <div class="col my-2">
                     <div class="card shadow-sm">
                         <div class="card-header text-center">
-                            Portifólio
+                            Portfólio
                         </div>
                         <img src="dist/img/projeto-portifolio.png" alt="">
                         <div class="card-body">
@@ -385,6 +385,28 @@
                                 </div>
                                 <div class="btn-group">
                                     <p class="h6 mt-1 text-secondary">Projeto privado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center">
+                            Minha Cantina - PDV
+                        </div>
+                        <img src="dist/img/projeto-minha-cantina.jpg" alt="">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tecnologies">
+                                    <small>
+                                        <i class="fa-brands fa-html5 fa-xl mx-1"></i>
+                                        <i class="fa-brands fa-js fa-xl mx-1"></i>
+                                        <img class="tecnologies-codeigniter" src="dist/img/codeigniter-icon.png" alt="">
+                                    </small>
+                                </div>
+                                <div class="btn-group">
+                                    <p class="h6 mt-1 text-secondary">Em desenvolvimento</p>
                                 </div>
                             </div>
                         </div>
